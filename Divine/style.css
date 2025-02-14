@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('our_picture.jpg'); /* Use the image as the background */
+    background-size: cover; /* Ensure the image covers the whole page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fix the background so it doesn’t scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    animation: fadeIn 3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    animation: bounce 1.5s infinite alternate;
+}
+
+#subMessage {
+    font-size: 24px;
+    opacity: 0;
+    animation: fadeInText 2s ease-out forwards;
+    animation-delay: 1s;
+}
+
+#valentineMessage {
+    font-size: 30px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInValentine 2s ease-out forwards;
+    animation-delay: 2s;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInValentine {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
